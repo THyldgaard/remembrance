@@ -9,6 +9,7 @@
 import Foundation
 
 class ToDoItem {
+  
   let name: String
   let creationDate: NSDate
   var isComplete: Bool
@@ -17,6 +18,15 @@ class ToDoItem {
     self.name = name
     self.isComplete = isCompleted
     self.creationDate = creationDate
+    
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    // Taking the values to initialize properties from the
+    // NSCoder instance
+    name = aDecoder.decodeObjectForKey(Keys.Name.rawValue) as! String
+    isComplete = aDecoder.decodeObjectForKey(Keys.IsCompleted.rawValue) as! Bool
+    creationDate = aDecoder.decodeObjectForKey(Keys.CreationDate.rawValue) as! NSDate
     
   }
   

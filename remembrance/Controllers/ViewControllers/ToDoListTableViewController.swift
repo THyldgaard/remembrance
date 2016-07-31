@@ -10,6 +10,8 @@ import UIKit
 
 class ToDoListTableViewController: UITableViewController {
   
+  var stateController = StateController()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     

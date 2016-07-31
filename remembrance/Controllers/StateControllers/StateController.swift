@@ -10,10 +10,25 @@ import Foundation
 
 class StateController {
   
-  private(set) var items: [ToDoItem] = []
+  static let itemsFilePath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first! + "/items.txt"
+  
+  private(set) var items: [ToDoItem] = {
+    if let items = NSKeyedUnarchiver.unarchiveObjectWithFile(itemsFilePath) as? [ToDoItem] {
+      return items
+    } else {
+      return [ToDoItem]()
+    }
+    
+  }()
   
   func addItem(item: ToDoItem) {
     items.append(item)
+    
+  }
+  
+  func save() {
+    NSKeyedArchiver.archiveRootObject(self.items, toFile: StateController.itemsFilePath)
+    
   }
   
 }
