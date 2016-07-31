@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		426AC8541D4CB81700619F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8531D4CB81700619F77 /* AppDelegate.swift */; };
+		426AC8591D4CB81700619F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426AC8571D4CB81700619F77 /* Main.storyboard */; };
+		426AC85B1D4CB81700619F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426AC85A1D4CB81700619F77 /* Assets.xcassets */; };
+		426AC85E1D4CB81700619F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426AC85C1D4CB81700619F77 /* LaunchScreen.storyboard */; };
+		426AC8811D4E84B500619F77 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8801D4E84B500619F77 /* ToDoItem.swift */; };
+		426AC8881D4E84EE00619F77 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8841D4E84EE00619F77 /* StateController.swift */; };
+		426AC8891D4E84EE00619F77 /* AddToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8861D4E84EE00619F77 /* AddToDoItemViewController.swift */; };
+		426AC88A1D4E84EE00619F77 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8871D4E84EE00619F77 /* ToDoListTableViewController.swift */; };
+		426AC88F1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC88E1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		426AC8501D4CB81600619F77 /* remembrance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remembrance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		426AC8531D4CB81700619F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		426AC8581D4CB81700619F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		426AC85A1D4CB81700619F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426AC85D1D4CB81700619F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		426AC85F1D4CB81700619F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426AC8801D4E84B500619F77 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		426AC8841D4E84EE00619F77 /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		426AC8861D4E84EE00619F77 /* AddToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDoItemViewController.swift; sourceTree = "<group>"; };
+		426AC8871D4E84EE00619F77 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		426AC88E1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		426AC84D1D4CB81600619F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426AC8471D4CB81600619F77 = {
+			isa = PBXGroup;
+			children = (
+				426AC8521D4CB81600619F77 /* remembrance */,
+				426AC8511D4CB81600619F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		426AC8511D4CB81600619F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				426AC8501D4CB81600619F77 /* remembrance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		426AC8521D4CB81600619F77 /* remembrance */ = {
+			isa = PBXGroup;
+			children = (
+				426AC87F1D4E849900619F77 /* Models */,
+				426AC87C1D4E83CB00619F77 /* Views */,
+				426AC8821D4E84EE00619F77 /* Controllers */,
+				426AC88B1D4E850C00619F77 /* Utilities */,
+				426AC88C1D4E852F00619F77 /* Extensions */,
+				426AC8711D4E1ACE00619F77 /* Storyboards */,
+				426AC8531D4CB81700619F77 /* AppDelegate.swift */,
+				426AC85A1D4CB81700619F77 /* Assets.xcassets */,
+				426AC85F1D4CB81700619F77 /* Info.plist */,
+			);
+			path = remembrance;
+			sourceTree = "<group>";
+		};
+		426AC8711D4E1ACE00619F77 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				426AC8571D4CB81700619F77 /* Main.storyboard */,
+				426AC85C1D4CB81700619F77 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		426AC87C1D4E83CB00619F77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		426AC87F1D4E849900619F77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				426AC8801D4E84B500619F77 /* ToDoItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		426AC8821D4E84EE00619F77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				426AC8831D4E84EE00619F77 /* StateControllers */,
+				426AC8851D4E84EE00619F77 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		426AC8831D4E84EE00619F77 /* StateControllers */ = {
+			isa = PBXGroup;
+			children = (
+				426AC8841D4E84EE00619F77 /* StateController.swift */,
+			);
+			path = StateControllers;
+			sourceTree = "<group>";
+		};
+		426AC8851D4E84EE00619F77 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				426AC8861D4E84EE00619F77 /* AddToDoItemViewController.swift */,
+				426AC8871D4E84EE00619F77 /* ToDoListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		426AC88B1D4E850C00619F77 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		426AC88C1D4E852F00619F77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				426AC88D1D4E852F00619F77 /* Features */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		426AC88D1D4E852F00619F77 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				426AC88E1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		426AC84F1D4CB81600619F77 /* remembrance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426AC8621D4CB81700619F77 /* Build configuration list for PBXNativeTarget "remembrance" */;
+			buildPhases = (
+				426AC84C1D4CB81600619F77 /* Sources */,
+				426AC84D1D4CB81600619F77 /* Frameworks */,
+				426AC84E1D4CB81600619F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = remembrance;
+			productName = remembrance;
+			productReference = 426AC8501D4CB81600619F77 /* remembrance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		426AC8481D4CB81600619F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Hyldgaard Informatics";
+				TargetAttributes = {
+					426AC84F1D4CB81600619F77 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GJ39WCT989;
+					};
+				};
+			};
+			buildConfigurationList = 426AC84B1D4CB81600619F77 /* Build configuration list for PBXProject "remembrance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 426AC8471D4CB81600619F77;
+			productRefGroup = 426AC8511D4CB81600619F77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				426AC84F1D4CB81600619F77 /* remembrance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		426AC84E1D4CB81600619F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426AC85E1D4CB81700619F77 /* LaunchScreen.storyboard in Resources */,
+				426AC85B1D4CB81700619F77 /* Assets.xcassets in Resources */,
+				426AC8591D4CB81700619F77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		426AC84C1D4CB81600619F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426AC88A1D4E84EE00619F77 /* ToDoListTableViewController.swift in Sources */,
+				426AC8891D4E84EE00619F77 /* AddToDoItemViewController.swift in Sources */,
+				426AC8811D4E84B500619F77 /* ToDoItem.swift in Sources */,
+				426AC8541D4CB81700619F77 /* AppDelegate.swift in Sources */,
+				426AC88F1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift in Sources */,
+				426AC8881D4E84EE00619F77 /* StateController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		426AC8571D4CB81700619F77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426AC8581D4CB81700619F77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		426AC85C1D4CB81700619F77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426AC85D1D4CB81700619F77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		426AC8601D4CB81700619F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		426AC8611D4CB81700619F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		426AC8631D4CB81700619F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = remembrance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyldgaard-informatics.remembrance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		426AC8641D4CB81700619F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = remembrance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyldgaard-informatics.remembrance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		426AC84B1D4CB81600619F77 /* Build configuration list for PBXProject "remembrance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426AC8601D4CB81700619F77 /* Debug */,
+				426AC8611D4CB81700619F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426AC8621D4CB81700619F77 /* Build configuration list for PBXNativeTarget "remembrance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426AC8631D4CB81700619F77 /* Debug */,
+				426AC8641D4CB81700619F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 426AC8481D4CB81600619F77 /* Project object */;
+}
