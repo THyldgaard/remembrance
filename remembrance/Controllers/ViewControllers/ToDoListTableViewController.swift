@@ -10,16 +10,19 @@ import UIKit
 
 class ToDoListTableViewController: UITableViewController {
   
-  var stateController = StateController()
+  var stateController: StateController?
+  var tableViewDataSource: TableViewDataSource?
+  var tableViewDelegate: TableViewDelegate?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = false
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    // Create delegate and data source instances
+    if let stateController = stateController {
+      tableViewDataSource = TableViewDataSource(tableView:
+        tableView, stateController: stateController)
+      tableViewDelegate = TableViewDelegate(tableView:
+        tableView, stateController: stateController)
+    }
   }
   
   override func didReceiveMemoryWarning() {

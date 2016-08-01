@@ -17,6 +17,11 @@
 		426AC88A1D4E84EE00619F77 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8871D4E84EE00619F77 /* ToDoListTableViewController.swift */; };
 		426AC88F1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC88E1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift */; };
 		426AC8931D4E8A6B00619F77 /* ToDoItem+Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8921D4E8A6B00619F77 /* ToDoItem+Encoder.swift */; };
+		426AC8951D4EAA9F00619F77 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8941D4EAA9F00619F77 /* TableViewDataSource.swift */; };
+		426AC8991D4EB0A100619F77 /* TableViewDataSource+RowsInSectionAndAtIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC8981D4EB0A100619F77 /* TableViewDataSource+RowsInSectionAndAtIndexPath.swift */; };
+		426AC89B1D4F779400619F77 /* ToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC89A1D4F779400619F77 /* ToDoItemCell.swift */; };
+		426AC89D1D4F79B800619F77 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC89C1D4F79B800619F77 /* TableViewDelegate.swift */; };
+		426AC89F1D4F7A5F00619F77 /* TableViewDelegate+DeAndDidSelectRowAtIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AC89E1D4F7A5F00619F77 /* TableViewDelegate+DeAndDidSelectRowAtIndexPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		426AC8871D4E84EE00619F77 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		426AC88E1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		426AC8921D4E8A6B00619F77 /* ToDoItem+Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToDoItem+Encoder.swift"; sourceTree = "<group>"; };
+		426AC8941D4EAA9F00619F77 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		426AC8981D4EB0A100619F77 /* TableViewDataSource+RowsInSectionAndAtIndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewDataSource+RowsInSectionAndAtIndexPath.swift"; sourceTree = "<group>"; };
+		426AC89A1D4F779400619F77 /* ToDoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemCell.swift; sourceTree = "<group>"; };
+		426AC89C1D4F79B800619F77 /* TableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
+		426AC89E1D4F7A5F00619F77 /* TableViewDelegate+DeAndDidSelectRowAtIndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewDelegate+DeAndDidSelectRowAtIndexPath.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 		426AC87C1D4E83CB00619F77 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				426AC89A1D4F779400619F77 /* ToDoItemCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +141,8 @@
 		426AC88B1D4E850C00619F77 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				426AC8941D4EAA9F00619F77 /* TableViewDataSource.swift */,
+				426AC89C1D4F79B800619F77 /* TableViewDelegate.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -147,6 +160,8 @@
 			children = (
 				426AC88E1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift */,
 				426AC8921D4E8A6B00619F77 /* ToDoItem+Encoder.swift */,
+				426AC8981D4EB0A100619F77 /* TableViewDataSource+RowsInSectionAndAtIndexPath.swift */,
+				426AC89E1D4F7A5F00619F77 /* TableViewDelegate+DeAndDidSelectRowAtIndexPath.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -225,10 +240,15 @@
 			files = (
 				426AC88A1D4E84EE00619F77 /* ToDoListTableViewController.swift in Sources */,
 				426AC8891D4E84EE00619F77 /* AddToDoItemViewController.swift in Sources */,
+				426AC8951D4EAA9F00619F77 /* TableViewDataSource.swift in Sources */,
 				426AC8811D4E84B500619F77 /* ToDoItem.swift in Sources */,
 				426AC8541D4CB81700619F77 /* AppDelegate.swift in Sources */,
+				426AC8991D4EB0A100619F77 /* TableViewDataSource+RowsInSectionAndAtIndexPath.swift in Sources */,
+				426AC89B1D4F779400619F77 /* ToDoItemCell.swift in Sources */,
+				426AC89F1D4F7A5F00619F77 /* TableViewDelegate+DeAndDidSelectRowAtIndexPath.swift in Sources */,
 				426AC88F1D4E852F00619F77 /* UIViewController+DismissKeyboard.swift in Sources */,
 				426AC8931D4E8A6B00619F77 /* ToDoItem+Encoder.swift in Sources */,
+				426AC89D1D4F79B800619F77 /* TableViewDelegate.swift in Sources */,
 				426AC8881D4E84EE00619F77 /* StateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
