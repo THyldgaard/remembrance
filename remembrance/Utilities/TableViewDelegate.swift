@@ -9,7 +9,6 @@
 import UIKit
 
 class TableViewDelegate: NSObject {
-  
   let stateController: StateController
   
   init(tableView: UITableView, stateController: StateController) {
@@ -18,5 +17,5 @@ class TableViewDelegate: NSObject {
     tableView.delegate = self
   }
   
-
+  
 }

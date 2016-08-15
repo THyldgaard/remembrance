@@ -10,26 +10,24 @@ import UIKit
 
 class AddToDoItemViewController: UIViewController {
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  @IBOutlet weak var cancelButton: UIBarButtonItem!
+  @IBOutlet weak var saveButton: UIBarButtonItem!
+  @IBOutlet weak var nameTextField: UITextField!
+  
+  var stateController: StateController?
+  // MARK: - Navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // If the cancel button is tapped or no name for the item
+    // has been typed in the text field, we do nothing.
+    // Otherwise, we create a new to-do item and add
+    // it to the state controller.
     
-    // Do any additional setup after loading the view.
+    guard let tappedButton = sender as? UIBarButtonItem where tappedButton != cancelButton else { return }
+    guard let text = nameTextField.text else { return }
+    
+    let todoItem = ToDoItem(name: text, isCompleted: false, creationDate: NSDate())
+    stateController?.addItem(todoItem)
+    
   }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
   
 }

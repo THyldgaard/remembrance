@@ -20,12 +20,15 @@ class ToDoItemCell: UITableViewCell {
   
   var isCompleted: Bool = false {
     didSet {
-      if isCompleted {
-        accessoryType = UITableViewCellAccessoryType.Checkmark
-      } else {
-        accessoryType = UITableViewCellAccessoryType.None
-      }
+      
+      isCompleted ? (accessoryType = UITableViewCellAccessoryType.Checkmark) : (accessoryType = UITableViewCellAccessoryType.None)
+      //
+      //      if isCompleted {
+      //        accessoryType = UITableViewCellAccessoryType.Checkmark
+      //      } else {
+      //        accessoryType = UITableViewCellAccessoryType.None
+      //      }
     }
   }
-
+  
 }

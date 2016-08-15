@@ -58,6 +58,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="l9k-7N-7Os" id="dSp-If-vjz"/>
+                        <outlet property="nameTextField" destination="6e5-cd-2Lq" id="giB-i9-htI"/>
+                        <outlet property="saveButton" destination="niD-N5-MaN" id="qfj-2c-mLY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtN-un-Hog" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Va6-q8-oVO" userLabel="Exit" sceneMemberID="exit"/>
@@ -91,11 +96,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TN6-fz-Ktx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoItemCell" id="TN6-fz-Ktx" customClass="ToDoItemCell" customModule="remembrance" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TN6-fz-Ktx" id="4at-If-TTe">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

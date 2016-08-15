@@ -19,7 +19,7 @@ extension TableViewDataSource: UITableViewDataSource {
     let toDoItem = stateController.items[indexPath.row]
     let cell = tableView.dequeueReusableCellWithIdentifier(ToDoItemCell.identifier, forIndexPath: indexPath) as! ToDoItemCell
     cell.name = toDoItem.name
-    cell.isCompleted = toDoItem.isComplete
+    cell.isCompleted = toDoItem.isCompleted
     return cell
   }
   

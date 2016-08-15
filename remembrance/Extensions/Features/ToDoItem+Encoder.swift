@@ -9,9 +9,9 @@
 import Foundation
 
 /**
-  This extention is used to store the enum value and the method
-  to encode data, so that only initialisers and values are in the
-  ToDoItem class.
+ This extention is used to store the enum value and the method
+ to encode data, so that only initialisers and values are in the
+ ToDoItem class.
  */
 
 extension ToDoItem {
@@ -31,7 +31,7 @@ extension ToDoItem {
   func encodeWithCoder(aCoder: NSCoder) {
     // Encoding of properties through NSCoder
     aCoder.encodeObject(name, forKey: Keys.Name.rawValue)
-    aCoder.encodeObject(isComplete, forKey: Keys.IsCompleted.rawValue)
+    aCoder.encodeObject(isCompleted, forKey: Keys.IsCompleted.rawValue)
     aCoder.encodeObject(creationDate, forKey: Keys.CreationDate.rawValue)
     
   }
